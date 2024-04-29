@@ -12,5 +12,10 @@ console.log(bigNum);
 
 const heros=["IronMan","Spider-Man","Hulk"];
 let myObj={
-    
+    firstName : "John",
+    lastName  : "Doe",
+    age     : 50,
+    eyeColor  : "blue"
 }
+
+console.log(heros);
