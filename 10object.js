@@ -1,0 +1,2 @@
+// singleton
+// object literals
