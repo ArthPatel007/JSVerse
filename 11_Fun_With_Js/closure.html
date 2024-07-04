@@ -1,0 +1,41 @@
+<!-- Closure in  html css in js -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+  </body>
+  <script>
+    // function init() {
+    //   let name = "Mozila";
+    //   function logBrowserName() {
+    //     console.log(name);
+    //   }
+    //   logBrowserName();
+    // }
+    // init();
+  </script>
+  <script>
+    // document.getElementById("blue").onclick = function () {
+    //   document.body.style.backgroundColor = "blue";
+    // };
+    // document.getElementById("green").onclick = function () {
+    //   document.body.style.backgroundColor = "green";
+    // };
+    function clickeHandler(color) {
+      //   document.body.style.backgroundColor = `{$color}`;
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
+    }       
+    document.getElementById("blue").onclick = clickeHandler("blue");
+    document.getElementById("green").onclick = clickeHandler("green");
+  </script>
+</html>

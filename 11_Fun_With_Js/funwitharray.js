@@ -1,0 +1,2 @@
+const Arr = [];
+DebugPrint(Arr);
